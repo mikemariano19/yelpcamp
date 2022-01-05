@@ -435,24 +435,19 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 1.25rem;
 }
 
+.my-auto{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .my-3{
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
 }
 
-.my-20{
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-}
-
 .mx-0{
   margin-left: 0px;
   margin-right: 0px;
-}
-
-.my-auto{
-  margin-top: auto;
-  margin-bottom: auto;
 }
 
 .mb-9{
@@ -519,8 +514,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 18.125rem;
 }
 
-.w-40{
-  width: 10rem;
+.w-\[910px\]{
+  width: 910px;
+}
+
+.w-56{
+  width: 14rem;
 }
 
 .w-full{
@@ -529,14 +528,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-\[13\.6rem\]{
   width: 13.6rem;
-}
-
-.w-60{
-  width: 15rem;
-}
-
-.w-56{
-  width: 14rem;
 }
 
 .max-w-\[90rem\]{
@@ -674,6 +665,12 @@ Ensure the default browser behavior of the `hidden` attribute.
           text-decoration-line: underline;
 }
 
+@media (min-width: 320px){
+  .xs\:hidden{
+    display: none;
+  }
+}
+
 @media (min-width: 768px){
   .md\:ml-6{
     margin-left: 1.5rem;
@@ -683,8 +680,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 100%;
   }
 
-  .md\:w-auto{
-    width: auto;
+  .md\:w-max{
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
   }
 
   .md\:w-\[33\.75rem\]{
@@ -740,12 +739,37 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 1440px){
+  .Laptop-L\:mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .Laptop-L\:block{
+    display: block;
+  }
+
+  .Laptop-L\:flex{
+    display: flex;
+  }
+
+  .Laptop-L\:hidden{
+    display: none;
+  }
+
   .Laptop-L\:h-\[56\.25rem\]{
     height: 56.25rem;
   }
 
+  .Laptop-L\:w-\[71\.5rem\]{
+    width: 71.5rem;
+  }
+
   .Laptop-L\:w-\[31\.8rem\]{
     width: 31.8rem;
+  }
+
+  .Laptop-L\:justify-between{
+    justify-content: space-between;
   }
 
   .Laptop-L\:px-10{
