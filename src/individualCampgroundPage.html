@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body class="font-body container-xl mx-auto max-w-[90rem] max-h-screen">
-    <div class="flex justify-between bg-black p-4 text-lg">
+    <div class="flex justify-between bg-black p-4 text-lg w-full">
         <p class="font-semibold text-white text-center w-[18.125rem] md:w-full mx-auto lg">This project was made by <span class="underline text-[#80CBEB]">Colt Steele</span> and designed by <span class="underline text-[#80CBEB]">Codewell</span></p>
         <img src="/src/assets/Close.svg" class="p-4 md:p-2" alt="">
     </div>
@@ -23,14 +23,15 @@
         </div>
         <a href="" class="my-auto xs:hidden lg:block">Logout</a>
     </div>
-    <div class="mx-5 md:w-[33.75rem] Laptop-L:mx-auto">
-        <div class="border border-gray-200 rounded">
+    <!-- card -->
+    <div class="md:w-full">
+        <div class="border border-gray-200 rounded mx-5">
             <div class="p-[35px] ">
-                <div class="">
-                    <img src="/src/assets/High Quality Images/Mount Ulap.png" alt="">
+                <div class="w-full">
+                    <img src="/src/assets/Compressed Images/Mount Ulap.jpg" class="rounded w-full md:object-fill md:h-[22.813rem]" alt="">
                 </div>
                 <div class="pt-7 flex justify-between">
-                    <h1 class="font-bold text-xl">Mount Ulap</h1>
+                    <h1 class="font-bold text-2xl">Mount Ulap</h1>
                     <p class="font-semibold text-md">$104.99/night</p>
                 </div>
                 <div class="pt-6 text-gray-500">
@@ -43,13 +44,54 @@
         </div>
     </div>
 
-    <div class="mx-5 md:w-[33.75rem] lg:mx-auto">
-        
-        
-        <div class="text-center py-4">
-            <p class="bg-black p-4 rounded-md text-white font-semibold">Post Comment</p>
+    <div class="w-full pt-10">
+        <div class="border border-gray-200 rounded mx-5 p-[35px]">
+            <div class="">
+                <div class="flex justify-between">
+                    <h1 class="font-bold text-2xl">Adam Jones</h1>
+                    <p class="font-semibold text-md text-gray-500">13h ago</p>
+                </div>
+                <div class="pt-6 text-gray-500">
+                    <p class="text-lg">
+                        Honestly one of the best experience ever, took us a while to figure how to get there but it was amazing!
+                    </p>
+                    <div class="border-b w-full mt-7"></div>
+                </div>
+            </div>
+            <div class="pt-7">
+                <div class="flex justify-between">
+                    <h1 class="font-bold text-2xl">Isaac Dylan</h1>
+                    <p class="font-semibold text-md text-gray-500">1 day ago</p>
+                </div>
+                <div class="pt-6 text-gray-500">
+                    <p class="text-lg">
+                        Traveling changes you as a person, you gain more perpective, this is the perfect spot to do that.
+                    </p>
+                    <div class="border-b w-full mt-7"></div>
+                </div>
+            </div>
+            <div class="pt-7">
+                <div class="flex justify-between">
+                    <h1 class="font-bold text-2xl">Hudson Luca</h1>
+                    <p class="font-semibold text-md text-gray-500">3 days ago</p>
+                </div>
+                <div class="pt-6 text-gray-500">
+                    <p class="text-lg">
+                        Defenitely recommend going there, not too far and not a lot of people to ruin the experience.
+                    </p>
+                    <div class="border-b w-full mt-7"></div>
+                </div>
+            </div>
+            <!-- leave a review button -->
+            <div class="text-center py-4 xs:w-full sm:w-[13.75rem]">
+                <img src="" alt="">
+                <p class="bg-black p-4 rounded-md text-white font-semibold">Leave a Review</p>
+            </div>
         </div>
+        
     </div>
+
+    <!-- bottom-logo -->
     <div class="py-11 mx-5 Laptop-L:w-[71.5rem] Laptop-L:mx-auto">
         <img src="/src/assets/Logo.svg" alt="">
     </div>
