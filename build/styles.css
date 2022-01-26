@@ -539,32 +539,28 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: auto;
 }
 
-.w-44{
-  width: 11rem;
-}
-
 .w-\[13\.6rem\]{
   width: 13.6rem;
-}
-
-.w-\[58\.125rem\]{
-  width: 58.125rem;
 }
 
 .max-w-\[90rem\]{
   max-width: 90rem;
 }
 
-.grid-cols-2{
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
 .content-center{
   align-content: center;
 }
 
+.content-end{
+  align-content: flex-end;
+}
+
 .justify-between{
   justify-content: space-between;
+}
+
+.gap-0{
+  gap: 0px;
 }
 
 .rounded-md{
@@ -818,6 +814,15 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-right: auto;
   }
 
+  .lg\:mx-0{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .lg\:mr-0{
+    margin-right: 0px;
+  }
+
   .lg\:block{
     display: block;
   }
@@ -842,16 +847,45 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 709px;
   }
 
-  .lg\:grid-cols-2{
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .lg\:w-\[705px\]{
+    width: 705px;
   }
 
   .lg\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .lg\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .lg\:justify-between{
     justify-content: space-between;
+  }
+
+  .lg\:gap-2{
+    gap: 0.5rem;
+  }
+
+  .lg\:gap-10{
+    gap: 2.5rem;
+  }
+
+  .lg\:gap-20{
+    gap: 5rem;
+  }
+
+  .lg\:gap-28{
+    gap: 7rem;
+  }
+
+  .lg\:px-\[9\.3rem\]{
+    padding-left: 9.3rem;
+    padding-right: 9.3rem;
+  }
+
+  .lg\:pr-0{
+    padding-right: 0px;
   }
 }
 
