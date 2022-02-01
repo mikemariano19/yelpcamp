@@ -487,6 +487,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 1.5rem;
 }
 
+.inline-block{
+  display: inline-block;
+}
+
 .flex{
   display: flex;
 }
@@ -509,6 +513,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-\[900px\]{
   height: 900px;
+}
+
+.h-6{
+  height: 1.5rem;
+}
+
+.h-8{
+  height: 2rem;
 }
 
 .max-h-screen{
@@ -543,6 +555,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 13.6rem;
 }
 
+.w-6{
+  width: 1.5rem;
+}
+
+.w-8{
+  width: 2rem;
+}
+
 .max-w-\[90rem\]{
   max-width: 90rem;
 }
@@ -551,16 +571,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   align-content: center;
 }
 
-.content-end{
-  align-content: flex-end;
+.justify-end{
+  justify-content: flex-end;
 }
 
 .justify-between{
   justify-content: space-between;
-}
-
-.gap-0{
-  gap: 0px;
 }
 
 .rounded-md{
@@ -649,6 +665,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 2rem;
 }
 
+.py-6{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
 .pt-7{
   padding-top: 1.75rem;
 }
@@ -671,6 +692,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .text-center{
   text-align: center;
+}
+
+.align-middle{
+  vertical-align: middle;
 }
 
 .font-body{
@@ -771,6 +796,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 33.75rem;
   }
 
+  .md\:justify-between{
+    justify-content: space-between;
+  }
+
   .md\:object-fill{
     -o-object-fit: fill;
        object-fit: fill;
@@ -801,14 +830,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 1024px){
-  .lg\:col-span-1{
-    grid-column: span 1 / span 1;
-  }
-
-  .lg\:col-span-2{
-    grid-column: span 2 / span 2;
-  }
-
   .lg\:mx-auto{
     margin-left: auto;
     margin-right: auto;
@@ -819,8 +840,17 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-right: 0px;
   }
 
+  .lg\:mx-5{
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
+
   .lg\:mr-0{
     margin-right: 0px;
+  }
+
+  .lg\:mr-2{
+    margin-right: 0.5rem;
   }
 
   .lg\:block{
@@ -847,36 +877,36 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 709px;
   }
 
-  .lg\:w-\[705px\]{
-    width: 705px;
+  .lg\:w-full{
+    width: 100%;
   }
 
-  .lg\:grid-cols-3{
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+  .lg\:w-\[70px\]{
+    width: 70px;
+  }
+
+  .lg\:w-\[73px\]{
+    width: 73px;
+  }
+
+  .lg\:w-\[220px\]{
+    width: 220px;
+  }
+
+  .lg\:w-\[71\.5rem\]{
+    width: 71.5rem;
   }
 
   .lg\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .lg\:justify-end{
+    justify-content: flex-end;
+  }
+
   .lg\:justify-between{
     justify-content: space-between;
-  }
-
-  .lg\:gap-2{
-    gap: 0.5rem;
-  }
-
-  .lg\:gap-10{
-    gap: 2.5rem;
-  }
-
-  .lg\:gap-20{
-    gap: 5rem;
-  }
-
-  .lg\:gap-28{
-    gap: 7rem;
   }
 
   .lg\:px-\[9\.3rem\]{
@@ -884,8 +914,14 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding-right: 9.3rem;
   }
 
-  .lg\:pr-0{
-    padding-right: 0px;
+  .lg\:px-5{
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .lg\:px-2{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 }
 
@@ -899,6 +935,15 @@ Ensure the default browser behavior of the `hidden` attribute.
   .Laptop-L\:mx-auto{
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .Laptop-L\:mx-0{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .Laptop-L\:mr-0{
+    margin-right: 0px;
   }
 
   .Laptop-L\:block{
@@ -929,6 +974,18 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 31.8rem;
   }
 
+  .Laptop-L\:w-\[709px\]{
+    width: 709px;
+  }
+
+  .Laptop-L\:w-\[220px\]{
+    width: 220px;
+  }
+
+  .Laptop-L\:justify-end{
+    justify-content: flex-end;
+  }
+
   .Laptop-L\:justify-between{
     justify-content: space-between;
   }
@@ -936,6 +993,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   .Laptop-L\:px-10{
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+  }
+
+  .Laptop-L\:px-\[9\.3rem\]{
+    padding-left: 9.3rem;
+    padding-right: 9.3rem;
   }
 
   .Laptop-L\:pl-\[100px\]{

@@ -15,18 +15,18 @@
     <div class="flex justify-between py-11 mx-5 Laptop-L:w-[71.5rem] Laptop-L:mx-auto">
         <!-- sx-lg menu button -->
         <img src="/src/assets/Logo.svg" alt="" class="">
-        <img src="/src/assets/Hamburger Menu.svg" class="bg-[#F9F6F1] p-2 rounded-md lg:hidden" alt="">
+        <img src="/src/assets/Hamburger Menu.svg" class="bg-[#F9F6F1] p-2 rounded-md Laptop-L:hidden" alt="">
         <!-- Laptop-L nav bar -->
-        <div class="lg:flex lg:justify-between w-[760px] Laptop-L:w-[910px] my-auto xs:hidden">
+        <div class="Laptop-L:flex Laptop-L:justify-between w-[760px] Laptop-L:w-[910px] my-auto xs:hidden">
             <a href="">Home</a>
-            <a href="">johndoe</a>
+            <a href="" class="font-semibold">johndoe</a>
         </div>
-        <a href="" class="my-auto xs:hidden lg:block">Logout</a>
+        <a href="" class="my-auto xs:hidden Laptop-L:block">Logout</a>
     </div>
     <!-- card -->
     <!-- map large -->
-    <div class="lg:flex lg:justify-between lg:px-[9.3rem]">
-        <div class="xs:hidden lg:block">
+    <div class="Laptop-L:flex Laptop-L:justify-between Laptop-L:px-[9.3rem]">
+        <div class="xs:hidden Laptop-L:block">
             <div class="border border-gray-200 rounded">
                 <div class="p-[35px] md:p-[54px]">
                     <div class="">
@@ -36,8 +36,8 @@
             </div>
         </div>
     
-        <div class="md:w-full lg:w-[709px]">
-            <div class="border border-gray-200 rounded mx-5 lg:mr-0 p-[35px] md:p-[54px]">
+        <div class="md:w-full Laptop-L:w-[709px]">
+            <div class="border border-gray-200 rounded mx-5 Laptop-L:mx-0 Laptop-L:mr-0 p-[35px] md:p-[54px]">
                 <div class="w-full">
                     <img src="/src/assets/Compressed Images/Mount Ulap.jpg" class="rounded w-full md:object-fill md:h-[22.813rem]" alt="">
                 </div>
@@ -54,7 +54,7 @@
             </div>
         <!-- comment -->
             <div class="w-full pt-10">
-                <div class="border border-gray-200 rounded mx-5 p-[35px] md:p-[54px] lg:mx-0">
+                <div class="border border-gray-200 rounded mx-5 p-[35px] md:p-[54px] Laptop-L:mx-0">
                         <div class="flex justify-between">
                             <h1 class="font-bold text-2xl">Adam Jones</h1>
                             <p class="font-semibold text-md text-gray-500">13h ago</p>
@@ -90,9 +90,15 @@
                         </div>
                     </div>
                     <!-- leave a review button -->
-                    <div class="text-center py-4 xs:w-full sm:w-[13.75rem]">
-                        <img src="" alt="">
-                        <p class="bg-black p-4 rounded-md text-white font-semibold">Leave a Review</p>
+                    <div class="Laptop-L:flex Laptop-L:justify-end">
+                        <div class="text-center pt-6 xs:w-full sm:w-[13.75rem] Laptop-L:w-[220px] Laptop-L:flex Laptop-L:justify-end">
+                            <p class="bg-black p-4 rounded-md text-white font-semibold">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 inline-block lg:mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                                </svg>
+                                Leave a Review
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
