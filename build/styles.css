@@ -455,6 +455,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 0px;
 }
 
+.my-5{
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.mx-2{
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
 .mb-9{
   margin-bottom: 2.25rem;
 }
@@ -499,6 +509,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: inline-block;
 }
 
+.inline{
+  display: inline;
+}
+
 .flex{
   display: flex;
 }
@@ -525,6 +539,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-\[900px\]{
   height: 900px;
+}
+
+.h-6{
+  height: 1.5rem;
+}
+
+.h-4{
+  height: 1rem;
+}
+
+.h-5{
+  height: 1.25rem;
 }
 
 .max-h-screen{
@@ -563,6 +589,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 13.6rem;
 }
 
+.w-6{
+  width: 1.5rem;
+}
+
+.w-4{
+  width: 1rem;
+}
+
+.w-5{
+  width: 1.25rem;
+}
+
 .max-w-\[90rem\]{
   max-width: 90rem;
 }
@@ -583,12 +621,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 0.25rem;
 }
 
-.border{
-  border-width: 1px;
+.rounded-sm{
+  border-radius: 0.125rem;
 }
 
-.border-2{
-  border-width: 2px;
+.rounded-lg{
+  border-radius: 0.5rem;
+}
+
+.border{
+  border-width: 1px;
 }
 
 .border-b{
@@ -615,9 +657,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(247 247 247 / var(--tw-bg-opacity));
 }
 
-.bg-gray-500{
+.bg-white{
   --tw-bg-opacity: 1;
-  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .bg-cover{
@@ -674,6 +716,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 2rem;
 }
 
+.px-2{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .pt-7{
   padding-top: 1.75rem;
 }
@@ -692,6 +744,22 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pt-5{
   padding-top: 1.25rem;
+}
+
+.pt-4{
+  padding-top: 1rem;
+}
+
+.pb-5{
+  padding-bottom: 1.25rem;
+}
+
+.pt-\[12px\]{
+  padding-top: 12px;
+}
+
+.pt-3{
+  padding-top: 0.75rem;
 }
 
 .text-center{
@@ -720,6 +788,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .font-semibold{
@@ -767,12 +840,38 @@ Ensure the default browser behavior of the `hidden` attribute.
           text-decoration-line: underline;
 }
 
-.underline-offset-1{
-  text-underline-offset: 1px;
-}
-
 .underline-offset-2{
   text-underline-offset: 2px;
+}
+
+.placeholder-gray-500::-moz-placeholder{
+  --tw-placeholder-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-placeholder-opacity));
+}
+
+.placeholder-gray-500:-ms-input-placeholder{
+  --tw-placeholder-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-placeholder-opacity));
+}
+
+.placeholder-gray-500::placeholder{
+  --tw-placeholder-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-placeholder-opacity));
+}
+
+.placeholder-gray-600::-moz-placeholder{
+  --tw-placeholder-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-placeholder-opacity));
+}
+
+.placeholder-gray-600:-ms-input-placeholder{
+  --tw-placeholder-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-placeholder-opacity));
+}
+
+.placeholder-gray-600::placeholder{
+  --tw-placeholder-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-placeholder-opacity));
 }
 
 @media (min-width: 320px){
@@ -792,8 +891,29 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 768px){
+  .md\:mx-4{
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
   .md\:ml-6{
     margin-left: 1.5rem;
+  }
+
+  .md\:mt-0{
+    margin-top: 0px;
+  }
+
+  .md\:ml-4{
+    margin-left: 1rem;
+  }
+
+  .md\:mr-2{
+    margin-right: 0.5rem;
+  }
+
+  .md\:flex{
+    display: flex;
   }
 
   .md\:h-\[22\.813rem\]{
@@ -814,6 +934,22 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 33.75rem;
   }
 
+  .md\:w-\[400px\]{
+    width: 400px;
+  }
+
+  .md\:w-\[410px\]{
+    width: 410px;
+  }
+
+  .md\:w-\[205px\]{
+    width: 205px;
+  }
+
+  .md\:w-\[105px\]{
+    width: 105px;
+  }
+
   .md\:object-fill{
     -o-object-fit: fill;
        object-fit: fill;
@@ -827,9 +963,31 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding: 54px;
   }
 
+  .md\:p-14{
+    padding: 3.5rem;
+  }
+
   .md\:px-10{
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+  }
+
+  .md\:px-14{
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+  }
+
+  .md\:py-\[4\.5rem\]{
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+  }
+
+  .md\:pr-14{
+    padding-right: 3.5rem;
+  }
+
+  .md\:pl-14{
+    padding-left: 3.5rem;
   }
 
   .md\:text-6xl{
