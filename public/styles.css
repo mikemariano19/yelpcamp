@@ -459,6 +459,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 0px;
 }
 
+.mx-28{
+  margin-left: 7rem;
+  margin-right: 7rem;
+}
+
 .mb-9{
   margin-bottom: 2.25rem;
 }
@@ -573,6 +578,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .max-w-\[90rem\]{
   max-width: 90rem;
+}
+
+.max-w-\[71\.25\]{
+  max-width: 71.25;
 }
 
 .content-center{
@@ -727,10 +736,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 1.5rem;
 }
 
-.pl-4{
-  padding-left: 1rem;
-}
-
 .pb-10{
   padding-bottom: 2.5rem;
 }
@@ -741,6 +746,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pr-16{
   padding-right: 4rem;
+}
+
+.pl-4{
+  padding-left: 1rem;
 }
 
 .pt-4{
@@ -964,6 +973,11 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-right: auto;
   }
 
+  .lg\:mx-28{
+    margin-left: 7rem;
+    margin-right: 7rem;
+  }
+
   .lg\:mr-2{
     margin-right: 0.5rem;
   }
@@ -998,6 +1012,25 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 1280px){
+  .xl\:mx-28{
+    margin-left: 7rem;
+    margin-right: 7rem;
+  }
+
+  .xl\:mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .xl\:mx-0{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .xl\:max-w-\[1140px\]{
+    max-width: 1140px;
+  }
+
   .xl\:pt-\[138px\]{
     padding-top: 138px;
   }
@@ -1052,14 +1085,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .Laptop-L\:w-\[220px\]{
     width: 220px;
-  }
-
-  .Laptop-L\:w-\[1150px\]{
-    width: 1150px;
-  }
-
-  .Laptop-L\:w-\[1250px\]{
-    width: 1250px;
   }
 
   .Laptop-L\:w-\[1300px\]{

@@ -12,149 +12,157 @@
         <p class="font-semibold text-white text-center w-[18.125rem] md:w-full mx-auto">This project was made by <span class="underline text-[#80CBEB]">Colt Steele</span> and designed by <span class="underline text-[#80CBEB]">Codewell</span></p>
         <img src="/public/images/Close.svg" class="p-4 md:p-2" alt="">
     </div>
-    <!-- Nav -->
-    <div class="flex justify-between py-11 mx-5"> 
-        <!-- sx-lg menu burger button -->
-        <img src="/public/images/Logo.svg" alt="" class="">
-        <img src="/public/images/Hamburger Menu.svg" id="burger" class="bg-[#F9F6F1] p-2 rounded-md md:hidden" alt="">
+
+   <div class="xl:max-w-[1140px] xl:mx-auto">
+            <!-- Nav -->
+        <div class="flex justify-between py-11 mx-5"> 
+            <!-- menu burger button -->
+            <img src="/public/images/Logo.svg" alt="" class="">
+            <img src="/public/images/Hamburger Menu.svg" id="burger" class="bg-[#F9F6F1] p-2 rounded-md md:hidden" alt="">
+            
+            <!-- Laptop-L nav bar -->
+            <div class="md:flex md:justify-between w-[760px] lg:w-[860px] Laptop-L:w-[1300px] ml-4 my-auto xs:hidden">
+                <div>
+                    <a href="/public/index.html">Home</a>
+                </div>
+                <div class="flex">
+                    <a href="#" class="font-semibold">johndoe</a>
+                    <a href="#" class="my-auto ml-4">Log Out</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- dropdown menu -->
+            <div class="hidden mx-5 mb-5" id="menu">
+                <ul class="w-full md:w-4/12 md:float-right border-1 rounded bg-gray-100 p-2">
+                    <a href="/public/index.html"><li class="border-b-2 border-gray-300">Home</li></a>
+                    <a href=""><li class="font-semibold border-b-2 border-gray-300">john doe</li></a>
+                    <a href=""><li>Logout</li></a>
+                </ul>
+            </div>
         
-        <!-- Laptop-L nav bar -->
-        <div class="md:flex md:justify-between w-[760px] lg:w-[860px] Laptop-L:w-[1300px] ml-4 my-auto xs:hidden">
-            <div>
-                <a href="/public/index.html">Home</a>
-            </div>
-            <div class="flex">
-                <a href="#" class="font-semibold">johndoe</a>
-                <a href="#" class="my-auto pl-4">Log Out</a>
-            </div>
-        </div>
-    </div>
-
-    <!-- dropdown menu -->
-        <div class="hidden mx-5 mb-5" id="menu">
-            <ul class="w-full md:w-4/12 md:float-right border-1 rounded bg-gray-100 p-2">
-                <a href="/public/index.html"><li class="border-b-2 border-gray-300">Home</li></a>
-                <a href=""><li class="font-semibold border-b-2 border-gray-300">john doe</li></a>
-                <a href=""><li>Logout</li></a>
-            </ul>
-        </div>
-    
-    <div class="mx-5 pb-10">
-        <div class="bg-[#F9F6F1] rounded p-8 md:p-14 md:py-[4.5rem]">
-           <div class="md:w-[410px]">
-                <h1 class="text-4xl font-bold">Welcome to YelpCamp!</h1>
-                <p class="text-lg text-gray-500 pt-3">View our hand-picked campgrounds from all over the world, or add your own.</p>
-                <div class="md:flex md:justify-between">
-                    <div class="border rounded mt-5 text-center">
-                        <input type="text" placeholder="Search for camps" class="flex rounded w-full py-4 pr-16 pl-4 bg-white text-gray-500 font-medium text-lg align-middle">
+        <div class="mx-5 pb-10">
+            <div class="bg-[#F9F6F1] rounded p-8 md:p-14 md:py-[4.5rem]">
+            <div class="md:w-[410px]">
+                    <h1 class="text-4xl font-bold">Welcome to YelpCamp!</h1>
+                    <p class="text-lg text-gray-500 pt-3">View our hand-picked campgrounds from all over the world, or add your own.</p>
+                    <div class="md:flex md:justify-between">
+                        <div class="border rounded mt-5 text-center">
+                            <input type="text" placeholder="Search for camps" class="flex rounded w-full py-4 pr-16 pl-4 bg-white text-gray-500 font-medium text-lg align-middle">
+                        </div>
+                        <div class="bg-black rounded mt-5 px-4 md:mx-4 md:mr-2 text-center">
+                            <a href="">
+                                <button class="p-4 text-white text-lg align-middle">Search</button>
+                            </a>
+                        </div>
                     </div>
-                    <div class="bg-black rounded mt-5 px-4 md:mx-4 md:mr-2 text-center">
-                        <a href="">
-                            <button class="p-4 text-white text-lg align-middle">Search</button>
-                        </a>
+                    <div class="text-gray-500 font-semibold underline underline-offset-2 mt-5">
+                        <a href="/public/addNewCampground(Logged In).html">Or add your own campground</a>
                     </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- cards -->
+    <div class="mx-5 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-5">
+
+        <div class="col-span-1">
+            <div class="border rounded p-4">
+                <div class="bg-cover bg-center w-full">
+                    <img src="/public/Compressed Images/Mount Ulap.jpg" class="rounded bg-cover w-full" alt="">
                 </div>
-                <div class="text-gray-500 font-semibold underline underline-offset-2 mt-5">
-                    <a href="/public/addNewCampground(Logged In).html">Or add your own campground</a>
+                <div class="pt-4 pb-4">
+                    <h1 class="font-bold text-lg">Mount Ulap</h1>
+                    <p class="text-gray-600 text-lg font-medium pt-1">One of the most famous hikes in Benguet is Mt Ulap in Itogon.</p>
                 </div>
-           </div>
+                <a href="/public/individualCampgroundPage(Logged In).html" class="text-xl py-5">
+                    <button class="border font-bold rounded p-4 text-center w-full">View Campground</button>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-span-1">
+            <div class="border rounded p-4">
+                <div class="bg-cover bg-center w-full">
+                    <img src="/public/Compressed Images/Calaguas Island.jpg" class="rounded bg-cover w-full" alt="">
+                </div>
+                <div class="pt-4 pb-4">
+                    <h1 class="font-bold text-lg">Calaguas Islands</h1>
+                    <p class="text-gray-600 text-lg font-medium pt-1">A paradise of islands that can rival the white sand beauty of Boracay.</p>
+                </div>
+                <a href="" class="text-xl py-5">
+                    <button class="border font-bold rounded p-4 text-center w-full">View Campground</button>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-span-1">
+            <div class="border rounded p-4">
+                <div class="bg-cover bg-center w-full">
+                    <img src="/public/Compressed Images/Onay Beach.jpg" class="rounded bg-cover w-full" alt="">
+                </div>
+                <div class="pt-4 pb-4">
+                    <h1 class="font-bold text-lg">Onay Beach</h1>
+                    <p class="text-gray-600 text-lg font-medium pt-1">This is one of the beach camping sites, beautiful and prestine.</p>
+                </div>
+                <a href="" class="text-xl py-5">
+                    <button class="border font-bold rounded p-4 text-center w-full">View Campground</button>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-span-1">
+            <div class="border rounded p-4">
+                <div class="bg-cover bg-center w-full">
+                    <img src="/public/Compressed Images/Seven Sisters Waterfall.jpg" class="rounded bg-cover w-full" alt="">
+                </div>
+                <div class="pt-4 pb-4">
+                    <h1 class="font-bold text-lg">Seven Sister Waterfall</h1>
+                    <p class="text-gray-600 text-lg font-medium pt-1">The Seven Sister is the 39th tallest waterfall in Norway.</p>
+                </div>
+                <a href="" class="text-xl py-5">
+                    <button class="border font-bold rounded p-4 text-center w-full">View Campground</button>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-span-1">
+            <div class="border rounded p-4">
+                <div class="bg-cover bg-center w-full">
+                    <img src="/public/Compressed Images/Latik Riverside.jpg" class="rounded bg-cover w-full" alt="">
+                </div>
+                <div class="pt-4 pb-4">
+                    <h1 class="font-bold text-lg">Latik Riveralde</h1>
+                    <p class="text-gray-600 text-lg font-medium pt-1">Philippines is one of the most dazzling countries in all of Asia.</p>
+                </div>
+                <a href="" class="text-xl py-5">
+                    <button class="border font-bold rounded p-4 text-center w-full">View Campground</button>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-span-1">
+            <div class="border rounded p-4">
+                <div class="bg-cover bg-center w-full">
+                    <img src="/public/Compressed Images/Buloy Springs.jpg" class="rounded bg-cover w-full" alt="">
+                </div>
+                <div class="pt-4 pb-4">
+                    <h1 class="font-bold text-lg">Buloy Springs</h1>
+                    <p class="text-gray-600 text-lg font-medium pt-1">This is one of the beach camping sites, beautiful and pristine.</p>
+                </div>
+                <a href="" class="text-xl py-5">
+                    <button class="border font-bold rounded p-4 text-center w-full">View Campground</button>
+                </a>
+            </div>
         </div>
     </div>
+ 
 
-    <!-- cards -->
-<div class="mx-5 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-5">
-
-    <div class="col-span-1">
-        <div class="border rounded p-4">
-            <div class="bg-cover bg-center w-full">
-                <img src="/public/Compressed Images/Mount Ulap.jpg" class="rounded bg-cover w-full" alt="">
-            </div>
-            <div class="pt-4 pb-4">
-                <h1 class="font-bold text-lg">Mount Ulap</h1>
-                <p class="text-gray-600 text-lg font-medium pt-1">One of the most famous hikes in Benguet is Mt Ulap in Itogon.</p>
-            </div>
-            <a href="/public/individualCampgroundPage(Logged In).html" class="text-xl py-5">
-                <button class="border font-bold rounded p-4 text-center w-full">View Campground</button>
-            </a>
-        </div>
+    <!-- bottom-logo -->
+    <div class="py-16 mx-5">
+        <img src="/public/images/Logo.svg" alt="">
     </div>
 
-    <div class="col-span-1">
-        <div class="border rounded p-4">
-            <div class="bg-cover bg-center w-full">
-                <img src="/public/Compressed Images/Calaguas Island.jpg" class="rounded bg-cover w-full" alt="">
-            </div>
-            <div class="pt-4 pb-4">
-                <h1 class="font-bold text-lg">Calaguas Islands</h1>
-                <p class="text-gray-600 text-lg font-medium pt-1">A paradise of islands that can rival the white sand beauty of Boracay.</p>
-            </div>
-            <a href="" class="text-xl py-5">
-                <button class="border font-bold rounded p-4 text-center w-full">View Campground</button>
-            </a>
-        </div>
-    </div>
-
-    <div class="col-span-1">
-        <div class="border rounded p-4">
-            <div class="bg-cover bg-center w-full">
-                <img src="/public/Compressed Images/Onay Beach.jpg" class="rounded bg-cover w-full" alt="">
-            </div>
-            <div class="pt-4 pb-4">
-                <h1 class="font-bold text-lg">Onay Beach</h1>
-                <p class="text-gray-600 text-lg font-medium pt-1">This is one of the beach camping sites, beautiful and prestine.</p>
-            </div>
-            <a href="" class="text-xl py-5">
-                <button class="border font-bold rounded p-4 text-center w-full">View Campground</button>
-            </a>
-        </div>
-    </div>
-
-    <div class="col-span-1">
-        <div class="border rounded p-4">
-            <div class="bg-cover bg-center w-full">
-                <img src="/public/Compressed Images/Seven Sisters Waterfall.jpg" class="rounded bg-cover w-full" alt="">
-            </div>
-            <div class="pt-4 pb-4">
-                <h1 class="font-bold text-lg">Seven Sister Waterfall</h1>
-                <p class="text-gray-600 text-lg font-medium pt-1">The Seven Sister is the 39th tallest waterfall in Norway.</p>
-            </div>
-            <a href="" class="text-xl py-5">
-                <button class="border font-bold rounded p-4 text-center w-full">View Campground</button>
-            </a>
-        </div>
-    </div>
-
-    <div class="col-span-1">
-        <div class="border rounded p-4">
-            <div class="bg-cover bg-center w-full">
-                <img src="/public/Compressed Images/Latik Riverside.jpg" class="rounded bg-cover w-full" alt="">
-            </div>
-            <div class="pt-4 pb-4">
-                <h1 class="font-bold text-lg">Latik Riveralde</h1>
-                <p class="text-gray-600 text-lg font-medium pt-1">Philippines is one of the most dazzling countries in all of Asia.</p>
-            </div>
-            <a href="" class="text-xl py-5">
-                <button class="border font-bold rounded p-4 text-center w-full">View Campground</button>
-            </a>
-        </div>
-    </div>
-
-    <div class="col-span-1">
-        <div class="border rounded p-4">
-            <div class="bg-cover bg-center w-full">
-                <img src="/public/Compressed Images/Buloy Springs.jpg" class="rounded bg-cover w-full" alt="">
-            </div>
-            <div class="pt-4 pb-4">
-                <h1 class="font-bold text-lg">Buloy Springs</h1>
-                <p class="text-gray-600 text-lg font-medium pt-1">This is one of the beach camping sites, beautiful and pristine.</p>
-            </div>
-            <a href="" class="text-xl py-5">
-                <button class="border font-bold rounded p-4 text-center w-full">View Campground</button>
-            </a>
-        </div>
-    </div>
-
-    
 </div>
 
 
@@ -166,20 +174,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-    <!-- bottom-logo -->
-    <div class="py-16 mx-5">
-        <img src="/public/images/Logo.svg" alt="">
-    </div>
 
 
     <script src="dropdown.js"></script>

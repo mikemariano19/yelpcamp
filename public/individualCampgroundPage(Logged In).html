@@ -12,17 +12,34 @@
         <p class="font-semibold text-white text-center w-[18.125rem] md:w-full mx-auto">This project was made by <span class="underline text-[#80CBEB]">Colt Steele</span> and designed by <span class="underline text-[#80CBEB]">Codewell</span></p>
         <img src="/public/images/Close.svg" class="p-4 md:p-2" alt="">
     </div>
-    <div class="flex justify-between py-11 mx-5 Laptop-L:w-[71.5rem] Laptop-L:mx-auto">
-        <!-- sx-lg menu button -->
-        <img src="/public/images/Logo.svg" alt="" class="">
-        <img src="/public/images/Hamburger Menu.svg" class="bg-[#F9F6F1] p-2 rounded-md Laptop-L:hidden" alt="">
-        <!-- Laptop-L nav bar -->
-        <div class="Laptop-L:flex Laptop-L:justify-between w-[760px] Laptop-L:w-[910px] my-auto xs:hidden">
-            <a href="/public/index.html">Home</a>
-            <a href="" class="font-semibold">johndoe</a>
+         <div class="xl:max-w-[1140px] xl:mx-auto">
+             <!-- Nav -->
+         <div class="flex justify-between py-11 mx-5 xl:mx-0"> 
+            <!-- menu burger button -->
+            <img src="/public/images/Logo.svg" alt="" class="">
+            <img src="/public/images/Hamburger Menu.svg" id="burger" class="bg-[#F9F6F1] p-2 rounded-md md:hidden" alt="">
+            
+            <!-- Laptop-L nav bar -->
+            <div class="md:flex md:justify-between w-[760px] lg:w-[860px] Laptop-L:w-[1300px] ml-4 my-auto xs:hidden">
+                <div>
+                    <a href="/public/index.html">Home</a>
+                </div>
+                <div class="flex">
+                    <a href="#" class="font-semibold">johndoe</a>
+                    <a href="#" class="my-auto ml-4">Log Out</a>
+                </div>
+            </div>
         </div>
-        <a href="" class="my-auto xs:hidden Laptop-L:block">Logout</a>
-    </div>
+         </div>
+
+        <!-- dropdown menu -->
+            <div class="hidden mx-5 mb-5" id="menu">
+                <ul class="w-full md:w-4/12 md:float-right border-1 rounded bg-gray-100 p-2">
+                    <a href="/public/index.html"><li class="border-b-2 border-gray-300">Home</li></a>
+                    <a href=""><li class="font-semibold border-b-2 border-gray-300">john doe</li></a>
+                    <a href=""><li>Logout</li></a>
+                </ul>
+            </div>
     <!-- card -->
     <!-- map large -->
     <div class="Laptop-L:flex Laptop-L:justify-between Laptop-L:px-[9.3rem]">
@@ -91,7 +108,7 @@
                     </div>
                     <!-- leave a review button -->
                     <div class="Laptop-L:flex Laptop-L:justify-end pt-6">
-                        <a href="" class="text-center xs:w-full sm:w-[13.75rem] Laptop-L:w-[220px] Laptop-L:flex Laptop-L:justify-end">
+                        <a href="/public/addNewComment(Logged In).html" class="text-center xs:w-full sm:w-[13.75rem] Laptop-L:w-[220px] Laptop-L:flex Laptop-L:justify-end">
                             <button class="bg-black p-4 rounded-md text-white font-semibold">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 inline-block lg:mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />

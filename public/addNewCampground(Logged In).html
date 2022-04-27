@@ -12,17 +12,36 @@
         <p class="font-semibold text-white text-center w-[18.125rem] md:w-full mx-auto lg">This project was made by <span class="underline text-[#80CBEB]">Colt Steele</span> and designed by <span class="underline text-[#80CBEB]">Codewell</span></p>
         <img src="/public/images/Close.svg" class="p-4 md:p-2" alt="">
     </div>
-    <div class="flex justify-between py-11 mx-5 Laptop-L:w-[71.5rem] Laptop-L:mx-auto">
-        <!-- sx-lg menu button -->
+    
+   <div class="xl:max-w-[1140px] xl:mx-auto">
+        <!-- Nav -->
+    <div class="flex justify-between py-11 mx-5 xl:mx-0"> 
+        <!-- menu burger button -->
         <img src="/public/images/Logo.svg" alt="" class="">
-        <img src="/public/images/Hamburger Menu.svg" class="bg-[#F9F6F1] p-2 rounded-md Laptop-L:hidden" alt="">
+        <img src="/public/images/Hamburger Menu.svg" id="burger" class="bg-[#F9F6F1] p-2 rounded-md md:hidden" alt="">
+        
         <!-- Laptop-L nav bar -->
-        <div class="Laptop-L:flex Laptop-L:justify-between w-[910px] my-auto xs:hidden">
-            <a href="/public/index.html">Home</a>
-            <a href="">johndoe</a>
+        <div class="md:flex md:justify-between w-[760px] lg:w-[860px] Laptop-L:w-[1300px] ml-4 my-auto xs:hidden">
+            <div>
+                <a href="/public/index.html">Home</a>
+            </div>
+            <div class="flex">
+                <a href="#" class="font-semibold">johndoe</a>
+                <a href="#" class="my-auto ml-4">Log Out</a>
+            </div>
         </div>
-        <a href="" class="my-auto xs:hidden Laptop-L:block">Logout</a>
     </div>
+
+    <!-- dropdown menu -->
+        <div class="hidden mx-5 mb-5" id="menu">
+            <ul class="w-full md:w-4/12 md:float-right border-1 rounded bg-gray-100 p-2">
+                <a href="/public/index.html"><li class="border-b-2 border-gray-300">Home</li></a>
+                <a href=""><li class="font-semibold border-b-2 border-gray-300">john doe</li></a>
+                <a href=""><li>Logout</li></a>
+            </ul>
+        </div>
+   </div>
+
     <div class="w-56 md:w-max mx-5 mb-9 Laptop-L:mx-auto">
         <p class="font-bold text-4xl">Add New Campground</p>
     </div>
